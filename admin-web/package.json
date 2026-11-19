@@ -1,0 +1,28 @@
+{
+  "name": "campus-admin-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "npm@11.16.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "element-plus": "2.14.8",
+    "vue": "3.5.45"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@vitejs/plugin-vue": "6.0.11",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vue-tsc": "3.3.14"
+  }
+}

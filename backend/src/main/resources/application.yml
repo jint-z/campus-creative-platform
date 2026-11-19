@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: campus-backend
+  config:
+    import: optional:file:./application-local.properties
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/campus_creative_dev?connectTimeout=2000&socketTimeout=3000
+    username: campus_dev
+    hikari:
+      maximum-pool-size: 4
+      connection-timeout: 3000
+      initialization-fail-timeout: -1
+
+server:
+  address: 127.0.0.1
+  port: 8080
+  error:
+    include-message: never
+    include-stacktrace: never
