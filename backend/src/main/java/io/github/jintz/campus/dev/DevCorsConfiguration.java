@@ -19,5 +19,21 @@ public class DevCorsConfiguration implements WebMvcConfigurer {
   @Override
   public void addCorsMappings(CorsRegistry registry) {
     registry.addMapping("/api/dev/**").allowedOrigins(adminOrigin).allowedMethods("GET");
+    registry.addMapping("/api/auth/admin/login").allowedOrigins(adminOrigin).allowedMethods("POST");
+    registry
+        .addMapping("/api/auth/logout")
+        .allowedOrigins(adminOrigin)
+        .allowedMethods("POST")
+        .allowedHeaders("Authorization", "Content-Type");
+    registry
+        .addMapping("/api/admin/**")
+        .allowedOrigins(adminOrigin)
+        .allowedMethods("GET", "POST", "PATCH", "PUT", "DELETE")
+        .allowedHeaders("Authorization", "Content-Type");
+    registry
+        .addMapping("/api/media/**")
+        .allowedOrigins(adminOrigin)
+        .allowedMethods("GET", "HEAD")
+        .allowedHeaders("Authorization");
   }
 }

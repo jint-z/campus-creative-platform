@@ -20,6 +20,8 @@ GRANT SELECT ON campus_creative_dev.* TO 'campus_dev'@'127.0.0.1';
 
 用 `campus_dev` 登录该实例并执行 `SELECT 1;` 检查账号。账号创建只需执行一次。配置文件与密码保存在各成员本机，仓库中的 `.example` 文件使用占位值。
 
+第一周业务开发还需按[账号与权限接口](week-one-auth.md)初始化账号表、升级本机数据库授权并配置管理员。
+
 ## 接口
 
 探针只在 Spring `dev` profile 启用。默认后端监听 `127.0.0.1:8080`，后台允许来源为 `http://127.0.0.1:5173`。

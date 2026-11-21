@@ -28,7 +28,7 @@ Maven 与 npm 依赖版本分别记录在 `backend/pom.xml` 和两个前端锁�
    cd campus-creative-platform
    ```
 
-2. 启动本机 MySQL 8.4，按[数据库与接口说明](docs/local-development.md)建库和账号。
+2. 启动本机 MySQL 8.4，按[数据库与接口说明](docs/local-development.md)建库和账号，并按[第一周账号与权限说明](docs/week-one-auth.md)初始化账号表和管理员。
 3. 从仓库根目录进入 `backend`，复制 `application-local.properties.example` 为 `application-local.properties`，填写本机数据库端口和账号密码。示例默认端口是 `3307`，若本机独立开发实例使用 `3306`，同步修改 JDBC URL。在 `backend` 目录启动后端。
 
    ```text
